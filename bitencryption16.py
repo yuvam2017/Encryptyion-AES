@@ -2,7 +2,7 @@ from Crypto.Cipher import AES
 import hashlib
 class Crypt:
     def __init__(self): 
-        self.pwd = "Ayush" # Change the password to the user requirement
+        self.pwd = "As you wish" 
         self.password = self.pwd.encode()      
         self.key = hashlib.sha256(self.password).digest()
         self.mode = AES.MODE_CBC
